@@ -1,25 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore } from 'react';
+import store from './store'
 
-
-// const store = createStore(reducer)
-
-// STORE -> GLOBALIZED STATE
-
-// ACTION -> TALK
 
 const respond = () => {
   return {
     type: 'RESPOND'
   }
 }
-
-
-const store = createStore(responderReducer);
 
 //Dis play in console
 
@@ -29,9 +21,13 @@ store.subscribe(() => console.log(store.getState()));
 store.dispatch(respond());
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+  // Render a `<Provider>` around the entire `<App>`,
+  // and pass the Redux store to as a prop
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+)

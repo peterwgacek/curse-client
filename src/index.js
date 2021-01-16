@@ -2,23 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from './store'
+import App from './App';
+import store from './store';
 
-
-const respond = () => {
-  return {
-    type: 'RESPOND'
-  }
-}
-
-//Dis play in console
 
 store.subscribe(() => console.log(store.getState()));
-
-// DISPATCH
-store.dispatch(respond());
 
 
 ReactDOM.render(
@@ -29,5 +18,6 @@ ReactDOM.render(
       <App />
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
-)
+  document.getElementById('root'));
+
+reportWebVitals();

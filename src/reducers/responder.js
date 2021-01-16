@@ -2,7 +2,9 @@
 const responderReducer = (state = [], action) => {
     switch (action.type) {
         case "RESPOND":
-            return state
+            return state + action.payload;
+        default:
+            return state;
     }
 };
 

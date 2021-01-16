@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore } from 'react-redux';
+import { createStore } from 'react';
 
 
 // const store = createStore(reducer)
@@ -18,9 +18,16 @@ const respond = () => {
   }
 }
 
-// REDUCER -> 
+
+const store = createStore(responderReducer);
+
+//Dis play in console
+
+store.subscribe(() => console.log(store.getState()));
 
 // DISPATCH
+store.dispatch(respond());
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

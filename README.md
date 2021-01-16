@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# The Redux Clone of Monkey Island
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Redux Clone of Monkey Island is a dialogue tree Redux emulator based on a conversation from a 1997 adventure game called The Curse of Monkey Island.
 
-## Available Scripts
+For my final project I wanted to introduce myself to a new skill that would further my understanding of state while also building something I'm passionate about.
 
-In the project directory, you can run:
+## Getting Started
+ [Click Here](https://marvel-assemble.herokuapp.com/) to see the deployed app. 
 
-### `yarn start`
+## Screenshots
+Home: ![screenshot1](./public/homepage.png)
+Dashboard: ![screenshot2](./public/dashboard.png)
+Search: ![screenshot3](./public/search.png)
+Sign-Up: ![screenshot4](./public/signup.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+##  Technologies/API used:
 
-### `yarn test`
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- Node
+- React
+- Redux
+- Heroku
+- Procreate 
+- Gimp 
+- Dialogue Designer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Trello:
 
-### `yarn build`
+[Click Here](https://trello.com/b/iuzoDFTW/project-5) to view my Trello board.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ERD:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![ERD](./public/project3ERD.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Wireframe: 
 
-### `yarn eject`
+![wireframe1](./public/wireframe.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## User Stories:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- AAU - I should be able to start the conversation by clicking on the skull
+- AAU - I should be able to  respond with pre-written dialogue options to further the conversation
+- AAU - I should be able to get through the conversation till there are no options left
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Stretch Goals:
+- tie in back end 
+- add more dialogue 
+- add audio responses
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Stretch Design Goals:
+- Change the cursor 
+- Add background music element
+- Add Hover effects to cursor
+- Animate the characters

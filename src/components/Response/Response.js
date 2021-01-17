@@ -22,7 +22,7 @@ const Response = () => {
         const next = findNode(choice)
         setCurrentNode(next)
         if (!next.choices && Boolean(next.next)) {
-            setTimeout(() => setNode(next.next), 3000)
+            setTimeout(() => setNode(next.next), 4000)
         }
     }
 
@@ -37,10 +37,10 @@ const Response = () => {
         <div>
             <h1>{currentNode.character[0]}</h1>
             {currentNode.choices && currentNode.choices.length && currentNode.choices.map(choice => {
-                return (<button className={className} onClick={() => setNode(choice.next)}>{choice.text.ENG}</button>)
+                return (<button className={className} onClick={() => setNode(choice.next)}>{choice.text}</button>)
 
             })}
-            {currentNode.text && <p className={className}>{currentNode.text.ENG}</p>}
+            {currentNode.text && <p className={className}>{currentNode.text}</p>}
         </div>
     )
 }

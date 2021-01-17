@@ -254,7 +254,7 @@
     "text": "Really? Then let me hear you scream in terror!",
     "title": "Scream"
 }, {
-    "character": ["Player", 0],
+    "character": ["Murray", 0],
     "is_box": false,
     "next": "1828584",
     "node_name": "3290412",
@@ -358,7 +358,7 @@
     "object_path": "",
     "slide_camera": true,
     "speaker_type": 0,
-    "text": "I said it's over... no more choices, the designer didn't wire up any more.",
+    "text": "I said it's over... no more choices, the programmer didn't wire up any more.",
     "title": "Itsdone"
 }, {
     "character": ["Murray", 2],

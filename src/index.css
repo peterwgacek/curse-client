@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: 'CaslonAntique';
-  color: white;
   background-image: url("./assets/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,3 +22,5 @@ code {
   font-family: 'CaslonAntique';
   background-image: url("./assets/background.png");
 }
+
+.Buttons {}

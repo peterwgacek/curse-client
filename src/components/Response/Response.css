@@ -1,7 +1,32 @@
 .dialogue-character-guybrush {
-    color: red;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .dialogue-character-murray {
-    color: green;
+    color: #D8CE7F;
+    font-size: 30px;
+    text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+h1 {
+    color: purple;
+    text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    font-family: 'CaslonAntique';
+    color: #D8CE7F;
+    font-size: 30px;
+    text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.button:hover {
+    color: #C13515;
+
 }

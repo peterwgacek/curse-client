@@ -2,6 +2,8 @@
 
 The Redux Clone of Monkey Island is a dialogue tree Redux emulator based on a conversation from a 1997 adventure game called The Curse of Monkey Island.
 
+ [Click Here](https://www.youtube.com/watch?v=_g-EhzAR9GY) if you want to see the inspiration for my app.
+
 For my final project I wanted to introduce myself to a new skill that would further my understanding of state while also building something I'm passionate about.
 
 ## Getting Started

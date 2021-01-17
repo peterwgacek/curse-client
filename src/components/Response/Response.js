@@ -35,12 +35,13 @@ const Response = () => {
     const className = `dialogue-character-${currentNode.character[0]}`.toLowerCase()
     return (
         <div>
-            <h1>{currentNode.character[0]}</h1>
-            {currentNode.choices && currentNode.choices.length && currentNode.choices.map(choice => {
-                return (<button className={className} onClick={() => setNode(choice.next)}>{choice.text}</button>)
-
-            })}
+            <h1>{currentNode.character[0]}:</h1>
             {currentNode.text && <p className={className}>{currentNode.text}</p>}
+            <div className="Buttons">
+                {currentNode.choices && currentNode.choices.length && currentNode.choices.map(choice => {
+                    return (<button className='button' onClick={() => setNode(choice.next)}>{choice.text}</button>)
+                })}
+            </div>
         </div>
     )
 }

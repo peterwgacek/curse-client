@@ -3,8 +3,8 @@ import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { respond } from './actions/respond';
 import Response from './components/Response/Response';
-
-
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 function App() {
 
@@ -13,9 +13,10 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Response />
-      <h1>Response: {responder} </h1>
-      <button onClick={() => dispatch(respond())}>+</button>
+      {/* <button onClick={() => dispatch(respond())}>+</button> */}
+      <Footer />
     </div>
   );
 }

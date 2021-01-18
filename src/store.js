@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware } from 'redux'
 import responderReducer from './reducers/responder'
+import Murray from './assets/Murray';
 
 const store = createStore(
     responderReducer,

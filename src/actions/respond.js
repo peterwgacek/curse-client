@@ -1,8 +1,12 @@
 
+//Action Creator
 
-export const respond = a => {
+export const respond = (character, text) => {
     return {
         type: 'RESPOND',
-        payload: a
+        payload: {
+            character: character,
+            text: text
+        }
     };
 };

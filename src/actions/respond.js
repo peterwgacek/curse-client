@@ -1,12 +1,11 @@
 
 //Action Creator
 
-export const respond = (character, text) => {
+export const set_node = (node) => {
     return {
-        type: 'RESPOND',
+        type: 'SET_NODE',
         payload: {
-            character: character,
-            text: text
+            node
         }
     };
 };

@@ -18,9 +18,11 @@ ReactDOM.render(
     <Header />
     <Provider store={store}>
       <App />
+      <Footer />
     </Provider>
-    {/* <Footer /> */}
+
   </React.StrictMode>,
+
   document.getElementById('root'));
 
 reportWebVitals();

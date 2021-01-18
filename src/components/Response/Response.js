@@ -37,6 +37,10 @@ const Response = () => {
         <div>
             <h1>{currentNode.character[0]}:</h1>
             {currentNode.text && <p className={className}>{currentNode.text}</p>}
+            <br />
+            <br />
+            <br />
+            <br />
             <div className="Buttons">
                 {currentNode.choices && currentNode.choices.length && currentNode.choices.map(choice => {
                     return (<button className='button' onClick={() => setNode(choice.next)}>{choice.text}</button>)

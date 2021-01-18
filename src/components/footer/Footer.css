@@ -1,10 +1,27 @@
 .Footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
     height: 50px;
-    background-color: black;
+    background-color: none;
     font-size: 25px;
     color: white;
+    font-family: 'Marvel-Regular';
+}
+
+
+.Footer a {
+    font-size: 20vh;
+    color: #D8CE7F;
+    font-size: 4vh;
+    text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    margin: 5px;
+
 }
 
 .links {
     justify-content: space-between;
+    color: #D8CE7F;
+    font-size: 4vh;
+    text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }

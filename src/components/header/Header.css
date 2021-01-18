@@ -1,9 +1,17 @@
 Header {
     display: flex;
+    margin-top: 2vh;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     color: white;
-    background-color: black;
-    height: 60px;
+    background-color: none;
+    height: 20vh;
     font-family: 'CaslonAntique';
+}
+
+.logo {
+    height: 20vh;
+    width: 25vw;
+    justify-content: flex-start;
 }

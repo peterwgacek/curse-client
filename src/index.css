@@ -1,16 +1,10 @@
 body {
-  margin: 0;
   font-family: 'CaslonAntique';
-  background-image: url("./assets/background.png");
+  background-image: url("./assets/Background_murray.png");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 @font-face {
@@ -20,7 +14,4 @@ code {
 
 .Page {
   font-family: 'CaslonAntique';
-  background-image: url("./assets/background.png");
 }
-
-.Buttons {}

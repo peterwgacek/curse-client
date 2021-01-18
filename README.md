@@ -61,3 +61,4 @@ Sign-Up: ![screenshot4](./public/signup.png)
 - Add background music element
 - Add Hover effects to cursor
 - Animate the characters
+- Wire in Guybrushes responses

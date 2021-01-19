@@ -1,8 +1,9 @@
 import Murray from '../../assets/Murray';
 import { connect } from 'react-redux';
 import React, { useState, useEffect } from 'react';
-import './Response.css'
-
+import './Response.css';
+import response from '../../actions/action.js';
+import reducer from '../../reducers/reducer.js';
 
 const findNode = (id) => {
     return Murray.find(node => node.node_name === id)
@@ -27,11 +28,6 @@ const Response = () => {
         }
     }
 
-    // console.log(Murray);
-    // console.log(this.props.currentNode);
-    // if (this.props.currentNode === null) {
-    //     return null
-    // }
 
     const className = `dialogue-character-${this.props.currentNode.character[0]}`.toLowerCase()
     return (
@@ -51,19 +47,17 @@ const Response = () => {
     )
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = response => {
     return {
-        //   count: state.count,
-        //   name: state.name
+        setNode: (node) => dispatch(response(node))
     };
 };
 
-
-const mapDispatchToProps = dispatch => {
+// Dispatch actions/event handlers go here:
+const mapDispatchToProps = currentNode => {
     return {
-        node: () => dispatch({})
-    };
+        currentNode: state.currentNode
+    }
 };
-
 
 export default connect(mapStateToProps)(Response);

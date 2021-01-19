@@ -6,11 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import responderReducer from './store.js'
+import reducer from './reducers/reducer.js'
 
 
 const store = createStore(
-  responderReducer,
+  reducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 

@@ -28,20 +28,20 @@ const Response = () => {
     }
 
     // console.log(Murray);
-    // console.log(currentNode);
-    // if (currentNode === null) {
+    // console.log(this.props.currentNode);
+    // if (this.props.currentNode === null) {
     //     return null
     // }
 
     const className = `dialogue-character-${this.props.currentNode.character[0]}`.toLowerCase()
     return (
         <div>
-            <h1>{currentNode.character[0]}:</h1>
+            <h1>{this.props.currentNode.character[0]}:</h1>
             {this.props.currentNode.text && <p className={className}>{this.props.currentNode.text}</p>}
             <br />
             <br />
             <br />
-            <br />
+
             <div className="Buttons">
                 {this.props.currentNode.choices && this.props.currentNode.choices.length && this.props.currentNode.choices.map(choice => {
                     return (<button className='button' onClick={() => setNode(choice.next)}>{choice.text}</button>)
@@ -51,8 +51,19 @@ const Response = () => {
     )
 }
 
-const mapStateToProps = state => ({
-    response: state.node
-});
+const mapStateToProps = state => {
+    return {
+        //   count: state.count,
+        //   name: state.name
+    };
+};
+
+
+const mapDispatchToProps = dispatch => {
+    return {
+        node: () => dispatch({})
+    };
+};
+
 
 export default connect(mapStateToProps)(Response);

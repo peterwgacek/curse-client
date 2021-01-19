@@ -21,16 +21,14 @@
 
 
 
-// //Reducer
+//Reducer
 
-// const responderReducer = (state = [], action) => {
-//     switch (action.type) {
-//         case "SET_NODE":
-//             return [...state, currentNode(action.payload)];
-//         default:
-//             return state;
-//     }
-// };
+const responderReducer = (state = [], action) => {
+    switch (action.type) {
+        case "SET_NODE":
+            return { ...state, currentNode: action.payload }
+    }
+};
 
 // const mapStateToProps (currentNode(state.currentNode));
 
@@ -41,4 +39,4 @@
 //     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 // );
 
-// export default store;
+export default responderReducer;

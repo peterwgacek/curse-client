@@ -1,38 +1,44 @@
-import { createStore } from 'redux';
-import { Response } from './components/Response/Response';
+// import { createStore } from 'redux';
+// import { Response } from './components/Response/Response';
 
 
-//Action
-const response = (node) => {
-    return {
-        type: 'SET_NODE',
-        payload: {
-            node
-        }
-    };
-    // mapDispatchtoProps(response);
-};
+// //Action
+// const response = (node) => {
+//     return {
+//         type: 'SET_NODE',
+//         payload: {
+//             node
+//         }
+//     };
+
+// };
+
+// const mapDispatchtoProps = dispatch => {
+//     return {
+//         response
+//     }
+// }
 
 
 
-//Reducer
+// //Reducer
 
-const responderReducer = (state = [], action) => {
-    switch (action.type) {
-        case "SET_NODE":
-            return [...state, currentNode(action.payload)];
-        default:
-            return state;
-    }
-};
+// const responderReducer = (state = [], action) => {
+//     switch (action.type) {
+//         case "SET_NODE":
+//             return [...state, currentNode(action.payload)];
+//         default:
+//             return state;
+//     }
+// };
 
-mapStateToProps(currentNode(state.currentNode));
+// const mapStateToProps (currentNode(state.currentNode));
 
-//Store
+// //Store
 
-const store = createStore(
-    responderReducer,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+// const store = createStore(
+//     responderReducer,
+//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+// );
 
-export default store;
+// export default store;

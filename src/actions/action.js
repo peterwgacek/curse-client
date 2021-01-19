@@ -2,11 +2,8 @@
 const response = (node) => {
     return {
         type: 'SET_NODE',
-        payload: {
-            node
-        }
-    };
-
+        payload: node
+    }
 };
 
 export default response;

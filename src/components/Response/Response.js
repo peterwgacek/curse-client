@@ -17,12 +17,12 @@ const Response = () => {
     useEffect(() => {
         const start = findNode('START')
         const next = findNode(start.next)
-        this.props.response(next)
+        this.props.setNode(next)
     }, [])
 
     const setNode = (choice) => {
         const next = findNode(choice)
-        this.props.response(next)
+        this.props.setNode(next)
         if (!next.choices && Boolean(next.next)) {
             setTimeout(() => setNode(next.next), 4000)
         }
@@ -60,4 +60,4 @@ const mapDispatchToProps = currentNode => {
     }
 };
 
-export default connect(mapStateToProps)(Response);
+export default connect(mapStateToProps, mapDispatchToProps)(Response);

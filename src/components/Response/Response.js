@@ -40,8 +40,6 @@ const Response = (props) => {
             {props.currentNode.text && <p className={className}>{props.currentNode.text}</p>}
             <br />
             <br />
-            <br />
-
             <div className="Buttons">
                 {props.currentNode.choices && props.currentNode.choices.length && props.currentNode.choices.map(choice => {
                     return (<button className='button' onClick={() => setNode(choice.next)}>{choice.text}</button>)

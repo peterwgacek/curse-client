@@ -1,6 +1,6 @@
 # The Redux Clone of Monkey Island
 
-The Redux Clone of Monkey Island is a dialogue tree Redux emulator based on a conversation from a 1997 adventure game called The Curse of Monkey Island.
+The Redux Clone of Monkey Island is a dialogue tree web-app based on a conversation from a 1997 adventure game called The Curse of Monkey Island, utilizing Redux.
 
  [Click Here](https://www.youtube.com/watch?v=_g-EhzAR9GY) if you want to see the inspiration for my app.
 
@@ -27,21 +27,15 @@ Sign-Up: ![screenshot4](./public/signup.png)
 - Redux
 - Heroku
 - Procreate 
-- Gimp 
 - Dialogue Designer
 
 ## Trello:
 
 [Click Here](https://trello.com/b/iuzoDFTW/project-5) to view my Trello board.
 
-## ERD:
-
-![ERD](./public/project3ERD.png)
-
 ## Wireframe: 
 
 ![wireframe1](./public/wireframe.png)
-
 
 ## User Stories:
 
@@ -49,16 +43,16 @@ Sign-Up: ![screenshot4](./public/signup.png)
 - AAU - I should be able to  respond with pre-written dialogue options to further the conversation
 - AAU - I should be able to get through the conversation till there are no options left
 
-
-
 ## Stretch Goals:
-- tie in back end 
-- add more dialogue 
-- add audio responses
+- Reconfigure Redux into a proper folder structure
+- Tie inthe backend to store the dialogue
+- Add more dialogue trees to finish the interaction
+- Populate Guybrush's dialogue when a response is clicked
+- Include audio on button clicks
 
 ## Stretch Design Goals:
 - Change the cursor 
 - Add background music element
 - Add Hover effects to cursor
 - Animate the characters
-- Wire in Guybrushes responses
+

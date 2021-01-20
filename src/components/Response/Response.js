@@ -56,7 +56,7 @@ const mapDispatchToProps = dispatch => {
 
 const mapStateToProps = state => {
     return {
-        currentNode: state.node
+        currentNode: state.currentNode
     }
 };
 

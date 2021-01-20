@@ -7,7 +7,7 @@ The Redux Clone of Monkey Island is a choose-your-own-dialogue, web-app based on
 For my final project I wanted to introduce myself to a new skill that would further my understanding of state while also building something I'm passionate about.
 
 ## Getting Started
- [Click Here](https://the-redux-clone-of-monkey-island-tm.herokuapp.com) to see the deployed app. 
+ [Click Here](https://thereduxcloneofmonkeyislandtm.herokuapp.com) to see the deployed app. 
 
 ## Screenshots
 Main Page: ![screenshot1](./public/main.png)

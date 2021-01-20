@@ -1,7 +1,6 @@
 
 import './App.css';
-// import { useSelector, useDispatch } from 'react-redux';
-import Response from './components/Response/Response';
+import Response from './components/Response/Response.js';
 
 
 function App() {

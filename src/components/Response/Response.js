@@ -9,40 +9,41 @@ const findNode = (id) => {
     return Murray.find(node => node.node_name === id)
 }
 
-const Response = (props) => {
-    const [currentNode, setCurrentNode] = useState(
+const Response = ({ setNode, currentNode }) => {
+    const [stateNode, setCurrentNode] = useState(
         null
     )
 
     useEffect(() => {
         const start = findNode('START')
         const next = findNode(start.next)
-        props.setNode(next)
-    }, [])
+        setNode(next)
+    }, [setNode])
 
-    const setNode = (choice) => {
+
+    const nextNode = (choice) => {
         const next = findNode(choice)
-        props.setNode(next)
+        nextNode(next)
         if (!next.choices && Boolean(next.next)) {
-            setTimeout(() => setNode(next.next), 4000)
+            setTimeout(() => nextNode(next.next), 4000)
         }
     }
 
-    console.log(currentNode);
-    if (currentNode === null) {
+    console.log(stateNode);
+    if (stateNode === null) {
         return null
     }
 
-    const className = `dialogue-character-${props.currentNode.character[0]}`.toLowerCase()
+    const className = `dialogue-character-${stateNode.character[0]}`.toLowerCase()
     return (
         <div>
-            <h1>{props.currentNode.character[0]}:</h1>
-            {props.currentNode.text && <p className={className}>{props.currentNode.text}</p>}
+            <h1>{stateNode.character[0]}:</h1>
+            {stateNode.text && <p className={className}>{stateNode.text}</p>}
             <br />
             <br />
             <div className="Buttons">
-                {props.currentNode.choices && props.currentNode.choices.length && props.currentNode.choices.map(choice => {
-                    return (<button className='button' onClick={() => setNode(choice.next)}>{choice.text}</button>)
+                {stateNode.choices && stateNode.choices.length && stateNode.choices.map(choice => {
+                    return (<button className='button' onClick={() => nextNode(choice.next)}>{choice.text}</button>)
                 })}
             </div>
         </div>

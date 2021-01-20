@@ -1,6 +1,6 @@
 import Murray from '../../assets/Murray';
 import { connect } from 'react-redux';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './Response.css';
 import response from '../../actions/action.js';
 // import reducer from '../../reducers/reducer.js';
@@ -10,9 +10,6 @@ const findNode = (id) => {
 }
 
 const Response = ({ setNode, currentNode }) => {
-    const [stateNode, setCurrentNode] = useState(
-        null
-    )
 
     useEffect(() => {
         const start = findNode('START')
@@ -23,26 +20,26 @@ const Response = ({ setNode, currentNode }) => {
 
     const nextNode = (choice) => {
         const next = findNode(choice)
-        nextNode(next)
+        setNode(next)
         if (!next.choices && Boolean(next.next)) {
             setTimeout(() => nextNode(next.next), 4000)
         }
     }
 
-    console.log(stateNode);
-    if (stateNode === null) {
+    console.log(currentNode);
+    if (!Boolean(currentNode)) {
         return null
     }
 
-    const className = `dialogue-character-${stateNode.character[0]}`.toLowerCase()
+    const className = `dialogue-character-${currentNode.character[0]}`.toLowerCase()
     return (
         <div>
-            <h1>{stateNode.character[0]}:</h1>
-            {stateNode.text && <p className={className}>{stateNode.text}</p>}
+            <h1>{currentNode.character[0]}:</h1>
+            {currentNode.text && <p className={className}>{currentNode.text}</p>}
             <br />
             <br />
             <div className="Buttons">
-                {stateNode.choices && stateNode.choices.length && stateNode.choices.map(choice => {
+                {currentNode.choices && currentNode.choices.length && currentNode.choices.map(choice => {
                     return (<button className='button' onClick={() => nextNode(choice.next)}>{choice.text}</button>)
                 })}
             </div>

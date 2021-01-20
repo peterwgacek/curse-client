@@ -1,6 +1,6 @@
 
 import './App.css';
-import Response from './components/Response/Response.js';
+import Response from './components/Response/Response';
 
 
 function App() {
